@@ -6,6 +6,6 @@ Nodo::Nodo(){
 }
 
 Nodo::Nodo(int _key){
-	this->key=key;
+	this->key = _key;
 	this->next = 0;
 }
