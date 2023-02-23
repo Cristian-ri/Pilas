@@ -9,6 +9,7 @@ class Pilas{
 		Pilas();
 		void pushFront(int);
 		void printPilas();
+		int popFront();
 	
 	private:
 		Nodo *head;	

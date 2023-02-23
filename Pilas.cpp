@@ -12,10 +12,22 @@ void Pilas::pushFront(int key){
 
 void Pilas::printPilas(){
 	Nodo *iterador;
-	iterador->next = head;
+	iterador = head;
 	
-	while(iterador->next != NULL){
+	while(iterador != NULL){
 		cout<<iterador->key<<endl;
 		iterador = iterador->next;
 	}
+}
+
+
+
+int Pilas::popFront(){
+    if (head==NULL)
+   {
+    cout<<"la lista esta vacia"<<endl;
+   }
+   int dato=head->key;
+   head=head->next;
+   return dato;
 }
